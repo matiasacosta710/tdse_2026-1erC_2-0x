@@ -4,4 +4,4 @@
 ### Responsable de la entrega:
 | Padrón | Apellidos, Nombres | Fecha | Deadline |
 | :----- | :--------------------- | :------: | :-------: |
-| 80584 | Acosta, Matias Hernana | | Semana 04 |
+| 80584 | Acosta, Matias Hernan | | Semana 04 |
