@@ -1,9 +1,29 @@
 Descripcion de la solucion de COMA Electronics:
-A la entrada del parking hay un sensor que detecta si hay o no un auto
+
+A la entrada del parking hay un sensor (solenoide o electroiman) que detecta si hay o no un auto por peso. Cuando se detecta
+un auto, se enciende el totem de entrada. El usuario presiona un boton, y el totem le extiende un ticket con la identificacion 
+del vehiculo, la fecha y la hora de ingreso (esto se hace para calcular el tiempo de la estadia en el estacionamiento).
+Una vez extendido el ticket, se abre la barrera de ingreso, permitiendo el paso del vehiculo al estacionamiento. Un sensor
+en la entrada detecta el pasaje del vehiculo, y una vez que termina de pasar, se baja la barrera.
+Para abandonar el estacionamiento, el conductor se dirige a la salida (con el ticket de pago de la entrada), a un cajero del 
+estacionamiento para abonar, o puede hacerlo mediante app con un codigo QR que ya viene en el ticket. Una vez confirmado el 
+pago del ticket, la barrera se levanta y el vehiculo puede abandonar el estacionamiento. Nuevamente el sensor de la entrada
+detecta el paso del auto, y cuando termina de pasar, la barrera se vuelve a bajar.
+
+
 
 Descripcion de la implementación de Parking Ticket Dispenser Machine (Entry)
 
+Cuando se detecta el auto a la entrada, se enciende un display en el totem de ingreso. Este le pide que presione un boton
+para dar comienzo al proceso de ingreso. Una vez presionado el boton, el sistema da un mensaje de bienvenida al usuario, y
+le pide que presione un boton para extenderle el ticket de pago. Una vez impreso el ticket, el sistema autoriza el 
+levantamiento de la barrera para que el vehiculo pueda pasar.
+Como opcionales, el totem puede tener un intercomunicador, un lector de tarjeta para usuarios frecuente y boton de ayuda
+para guiar al usuario.
+
+
 
 Enunciar los modelos para describir el comportamiento de c/u de los módulos de código C del tipo
+
 temporizado (Update by Time Code, period = 1mS), para escrutar => Sensor, procesar => System, actuar =>
 Actuator.
